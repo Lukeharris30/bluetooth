@@ -64,6 +64,7 @@ const { stop } = pausableWatch(isConnected, (newIsConnected) => {
   <button @click="requestDevice()">Request Bluetooth Device</button>
   <h1>{{ deviceName }}</h1>
   {{ batteryPercent }}%
+  <progress id="file" :value="batteryPercent" max="100"> {{ batteryPercent }}% </progress>
 </template>
 
 
